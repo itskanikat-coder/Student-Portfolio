@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="logo">
+          <span class="logo-icon"></span>
+          <span>Portfolio</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero / Intro -->
+      <main>
+        <section class="hero" id="home">
+          <!-- Left: Name and intro -->
+          <div class="hero-text">
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Growing my Skills
+            </div>
+
+            <h1 class="hero-name">Kanika Vipin Katiyar</h1>
+            <p class="hero-role">Student · Creative Learner · Class 8<sup>th</sup></p>
+
+            <p class="hero-bio">
+             I am Kanika Katiyar, a Class 8 student who enjoys exploring books, anime and technology. 
+  I love reading diary-style stories, designing in Canva, writing simple Python programs and learning HTML. 
+  I am also curious about AI and how it can help people learn and create, so I use this portfolio to share my projects and my journey as a creative learner.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#projects" class="btn-primary">View Projects ↗</a>
+              <a href="#contact" class="btn-ghost">Contact Me</a>
+              <span class="pill">Actively improving every day</span>
+            </div>
+          </div>
+
+          <!-- Right: Profile image -->
+          <div class="hero-image-wrapper">
+            <div class="hero-image-card">
+              <div class="profile-ring"></div>
+              <div class="profile-img">
+                <!-- Replace src with your own image file -->
+                <img src="Images/KANIKA.png" alt="Profile photo" />
+              </div>
+              <div class="badge">
+                <span class="badge-dot"></span>
+                <span>Building the Future </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">About</h2>
+              
+            </div>
+            <p class="section-subtitle">
+              The image above is an AI-generated version of my real photograph.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <p>
+  My name is Kanika Katiyar and I am a Class 8 student who enjoys learning in a creative and curious way. 
+  I love reading books, especially diary-style stories and personal entries that let me step into someone else’s thoughts and feelings.
+</p>
+<p>
+  I started learning Canva when I was 12, and now at 13 I use it to design simple posters, slides and other creative pieces for fun and for school. 
+  Along with this, I am learning Python and exploring HTML so that I can slowly build my own web pages and projects.
+</p>
+<p>
+  In my free time, I enjoy watching anime, reading, and listening to music, which often give me new ideas and inspiration. 
+  Through this portfolio, I want to collect my projects, track my progress and keep improving my skills step by step.
+</p>
+          </div>
+        </section>
+
+        <!-- Projects (blog-like layout) -->
+        <section id="projects">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Projects</h2>
+            </div>
+            <p class="section-subtitle">
+              A selection of personal work and practice projects. 
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-meta">
+                <span>2025 · Post</span>
+                <div class="project-tags">
+                  <span class="tag">Canva</span>
+                </div>
+              </div>
+              <h3 class="project-title">Canva Project: Explaining Past Life Regression</h3>
+              <p class="project-desc">
+                I designed an Instagram post in Canva for my father’s account on the topic “What is PLR (Past Life Regression)?”. 
+  The post explains PLR as a gentle hypnotherapy method where a person is guided into a relaxed state to explore what are believed to be memories from past lives, often for personal insight or healing.
+  Through this project, I practised turning a complex spiritual and psychological idea into a clear, visually engaging design for social media.
+              </p>
+              <a href="https://www.instagram.com/p/DQqiVk0k5JE/?img_index=1" class="project-link">
+                View post / View project
+                <span>↗</span>
+              </a>
+            </article>
+
+          
+
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Contact</h2>
+            </div>
+            <p class="section-subtitle">
+              Feel free to reach out for questions about me or any of the projects listed above.
+            </p>
+          </div>
+
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <p>
+                Use the form to send a message directly from this page. 
+                The form validates your input and shows a confirmation message after you submit.
+              </p>
+              <div class="contact-highlight">
+                If you’d like to reach out, please email me—I’m happy to hear from you and will try my best to respond as soon as possible.
+              </div>
+            </div>
+
+            <form
+  id="contactForm"
+  action="https://api.web3forms.com/submit"
+  method="POST"
+>
+  <!-- Web3Forms required hidden fields -->
+  <input type="hidden" name="access_key" value="1ef9e7c3-2f47-473c-9086-ca8ab08a231b" />
+  <input type="hidden" name="subject" value="New message from portfolio contact form" />
+  <input type="hidden" name="from_name" value="Student Portfolio Website" />
+  <!-- optional: change this to your own thank-you page -->
+  <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+
+  <div class="form-grid">
+    <div class="form-field">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your full name"
+        required
+      />
+      <div class="error-message" id="nameError"></div>
+    </div>
+
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@example.com"
+        required
+      />
+      <div class="error-message" id="emailError"></div>
+    </div>
+
+    <div class="form-field form-field-full">
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        placeholder="Write your message here"
+        required
+      ></textarea>
+      <div class="error-message" id="messageError"></div>
+    </div>
+  </div>
+
+  <div class="form-footer">
+    <div class="form-status" id="formStatus"></div>
+    <button type="submit" class="btn-submit" id="submitBtn">
+      Send Message
+      <span>➤</span>
+    </button>
+  </div>
+</form>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        © <span id="year"></span> Kanika Vipin Katiyar · Student Portfolio
+      </footer>
+    </div>
+  </div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
